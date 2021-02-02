@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Интернет-магазин вышивки "Рай"</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="filter_page_navigation.css" />
+    <link rel="stylesheet" href="card_product.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+
+<body>
+    <!--Шапка1-->
+    <div class="container back-color-light-blue">
+        <div class="row">
+            <div class="col-sm-4 logo">
+                <a href="index.html"><img src="logo.png" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-search" placeholder="Поиск...">
+            </div>
+            <div class="col-sm-2">
+                <a class="btn button-color-blue btn-search" href="search_result.html" role="button">Поиск</a>
+            </div>
+            <div class="col basket">
+                <a class="img-basket" href="basket.html"><img src="basket.png" alt=""></a>
+                <br />
+                <a class="link text-basket color-blue" href="basket.html">Корзина</a>
+            </div>
+        </div>
+    </div>
+    <!--Шапка2-->
+    <div class="container back-color-light-blue">
+        <div class="row">
+            <div class="col-sm-4">
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"> Каталог товаров </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="catalog_kits.html">Наборы для вышивания</a>
+                    <a class="dropdown-item" href="catalog_mouline.html">Мулине</a>
+                    <a class="dropdown-item" href="catalog_frame.html">Пяльца и станки</a>
+                    <a class="dropdown-item" href="catalog_canvas.html">Основы для вышивания</a>
+                </div>
+            </div>
+            <div class="col-sm">
+                <nav class="navbar navbar-expand-lg navbar-light back-color-light-blue">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link color-blue" href="help_buy.html">Как купить</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-blue" href="help_delivery_and_payment.html">Доставка и оплата</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-blue" href="help_contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--Надпись наборы для вышивания и сортировки-->
+    <div class="container bg-white">
+        <div class="row">
+            <div class="col-sm-3 subjects">
+                <p class="title"><strong>Основы для вышивания</strong></p>
+            </div>
+            <p class="sorting"><strong>Сортировка</strong></p>
+            <button type="button" class="btn btn-link sorting">По цене↑</button>
+            <button type="button" class="btn btn-link sorting">По обновлению</button>
+        </div>
+    </div>
+    <!--Блок с сортировками и карточками товаров-->
+    <div class="container bg-white">
+        <div class="row">
+            <!--Блок с сортировками-->
+            <div class="col-sm-3">
+                <p align="left"><strong>Производитель</strong></p>
+                <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">DMC</label>
+                </div>
+                <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Gamma</label>
+                </div>
+                <p class="list-sorting" align="left"><strong>Каунт</strong></p>
+                <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">14</label>
+                </div>
+                <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">18</label>
+                </div>
+                <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">28</label>
+                </div>
+                <div class="form-check form-check">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">32</label>
+                </div>
+                <button type="button" class="btn button-color-blue btn-filter">Применить фильтры</button>
+            </div>
+            <!--Первая колонка-->
+            <div class="col-sm-3">
+                <div class="card text-center card-product">
+                    <a class="card-img-top" href="product_canvas.html"><img src="images_canvas/small_images/Zweigart-14 3706-7011.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Канва Аида Zweigart 3706/7011</h5>
+                        <p class="card-text">Размер: 50х55 см</p>
+                        <p class="card-text">Каунт: 14</p>
+                        <p class="card-text">Производитель: Zweigart</p>
+                    </div>
+                    <div class="card-footer cost">
+                        <strong>430₽</strong>
+                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                    </div>
+                </div>
+                <div class="card text-center card-product">
+                    <a class="card-img-top" href="product_canvas.html"><img src="images_canvas/small_images/Кашель 3281-222.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Кашель 3281/222</h5>
+                        <p class="card-text">Размер: 35x50 см</p>
+                        <p class="card-text">Каунт: 28</p>
+                        <p class="card-text">Производитель: Zweigart</p>
+                    </div>
+                    <div class="card-footer cost">
+                        <strong>380₽</strong>
+                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--Вторая колонка-->
+            <div class="col-sm-3">
+                <div class="card text-center card-product">
+                    <a class="card-img-top" href="product_canvas.html"><img src="images_canvas/small_images/Zweigart-14 3706-611.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Канва Аида Zweigart 3706/611</h5>
+                        <p class="card-text">Размер: 50х55 см</p>
+                        <p class="card-text">Каунт: 16</p>
+                        <p class="card-text">Производитель: Zweigart</p>
+                    </div>
+                    <div class="card-footer cost">
+                        <strong>430₽</strong>
+                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                    </div>
+                </div>
+                <div class="card text-center card-product">
+                    <a class="card-img-top" href="product_canvas.html"><img src="images_canvas/small_images/Мурано 3984-100.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Мурано 3984/100</h5>
+                        <p class="card-text">Размер: 35x50 см</p>
+                        <p class="card-text">Каунт: 32</p>
+                        <p class="card-text">Производитель: Zweigart</p>
+                    </div>
+                    <div class="card-footer cost">
+                        <strong>330₽</strong>
+                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                    </div>
+                </div>
+            </div>
+            <!--Третья колонка-->
+            <div class="col-sm-3">
+                <div class="card text-center card-product">
+                    <a class="card-img-top" href="product_canvas.html"><img src="images_canvas/small_images/Gamma Aida-14 Персиковая.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Канва Аида Gamma Персиковая</h5>
+                        <p class="card-text">Размер: 50х50 см</p>
+                        <p class="card-text">Каунт: 14</p>
+                        <p class="card-text">Производитель: Gamma</p>
+                    </div>
+                    <div class="card-footer cost">
+                        <strong>160₽</strong>
+                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                    </div>
+                </div>
+                <div class="card text-center card-product">
+                    <a class="card-img-top" href="product_canvas.html"><img src="images_canvas/small_images/Мурано 3984-6083.jpg"></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Мурано 3984/6083</h5>
+                        <p class="card-text">Размер: 35x50 см</p>
+                        <p class="card-text">Каунт: 32</p>
+                        <p class="card-text">Производитель: Zweigart</p>
+                    </div>
+                    <div class="card-footer cost">
+                        <strong>340₽</strong>
+                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Переход по страницам-->
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+                <a class="page-link" href="catalog_canvas.html" tabindex="-1">Назад</a>
+            </li>
+            <li class="page-item">
+            <li class="page-item active">
+                <a class="page-link" href="catalog_canvas.html">1<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="page-item"><a class="page-link" href="catalog_canvas.html">2</a></li>
+            <li class="page-item"><a class="page-link" href="catalog_canvas.html">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="catalog_canvas.html">Вперед</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!--Подвал-->
+    <div class="container back-color-light-blue footer">
+        <div class="row">
+            <div class="col-sm color-blue">
+                <strong>© 2020 — 2020 </strong>Магазин вышивки "Рай"
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

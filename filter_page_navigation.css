@@ -1,0 +1,40 @@
+.sorting{
+    margin-left:1em;
+    color:black;
+    margin-top:1em;
+}
+
+.title{
+    margin-top:1em;;
+}
+
+.btn.sorting {
+    margin-top:0em;
+    margin-left:3em;
+    color:black;
+}
+
+.btn-filter{
+    margin-top:2em;
+}
+
+.list-sorting{
+    margin-top:2em;
+    margin-bottom:0.5em;
+}
+
+/*Навигация*/
+.page-link{
+    color:black;
+}
+
+/*Навигация: наведение*/
+.page-link:hover{
+    background-color:#F0F8FF;
+}
+
+.page-item.active .page-link{
+    background-color:#F0F8FF;
+    border-color:#eee;
+    color:#4682B4;
+}

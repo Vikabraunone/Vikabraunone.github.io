@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Интернет-магазин вышивки "Рай"</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="product_canvas.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+
+<body>
+    <!--Шапка1-->
+    <div class="container back-color-light-blue">
+        <div class="row">
+            <div class="col-sm-4 logo">
+                <a href="index.html"><img src="logo.png" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-search" placeholder="Поиск...">
+            </div>
+            <div class="col-sm-2">
+                <a class="btn button-color-blue btn-search" href="search_result.html" role="button">Поиск</a>
+            </div>
+            <div class="col basket">
+                <a class="img-basket" href="basket.html"><img src="basket.png" alt=""></a>
+                <br />
+                <a class="link text-basket color-blue" href="basket.html">Корзина</a>
+            </div>
+        </div>
+    </div>
+    <!--Шапка2-->
+    <div class="container back-color-light-blue">
+        <div class="row">
+            <div class="col-sm-4">
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"> Каталог товаров </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="catalog_kits.html">Наборы для вышивания</a>
+                    <a class="dropdown-item" href="catalog_mouline.html">Мулине</a>
+                    <a class="dropdown-item" href="catalog_frame.html">Пяльца и станки</a>
+                    <a class="dropdown-item" href="catalog_canvas.html">Основы для вышивания</a>
+                </div>
+            </div>
+            <div class="col-sm">
+                <nav class="navbar navbar-expand-lg navbar-light back-color-light-blue">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link color-blue" href="help_buy.html">Как купить</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-blue" href="help_delivery_and_payment.html">Доставка и оплата</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-blue" href="help_contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--Название товара-->
+    <div class="container bg-white">
+        <div class="row">
+            <div class="col-sm">
+                <p class="p-name-product">Канва Аида Zweigart 3706/7011</p>
+            </div>
+        </div>
+    </div>
+    <!--Блок с описанием товара-->
+    <div class="container bg-white">
+        <div class="row">
+            <div class="col-sm-5">
+                <img src="images_canvas/big_images/Zweigart-14 3706-7011.jpg" class="img">
+            </div>
+            <div class="col-sm">
+                <p><strong>Размер:</strong> 50x55 см</p>
+                <p><strong>Каунт:</strong> 14</p>
+                <p><strong>Производитель:</strong> Zweigart</p>
+                <p class="p-cost">430₽</p>
+                <button type="button" class="btn button-color-blue btn-basket">В корзину</button>
+                <p><strong>Описание</strong></p>
+                <p>Состав: 100% хлопок. Наименование цвета: Серебристая луна.</p>
+            </div>
+        </div>
+    </div>
+    <!--Подвал-->
+    <div class="container back-color-light-blue footer">
+        <div class="row">
+            <div class="col-sm color-blue">
+                <strong>© 2020 — 2020 </strong>Магазин вышивки "Рай"
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

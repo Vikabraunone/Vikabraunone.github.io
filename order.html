@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Интернет-магазин вышивки "Рай"</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="all.css" />
+    <link rel="stylesheet" href="order.css" />
+    <link rel="icon" type="image/png" href="favicon.png" />
+</head>
+
+<body>
+    <!--Шапка1-->
+    <div class="container back-color-light-blue">
+        <div class="row">
+            <div class="col-sm-4 logo">
+                <a href="index.html"><img src="logo.png" alt=""></a>
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control form-search" placeholder="Поиск...">
+            </div>
+            <div class="col-sm-2">
+                <a class="btn button-color-blue btn-search" href="search_result.html" role="button">Поиск</a>
+            </div>
+            <div class="col basket">
+                <a class="img-basket" href="basket.html"><img src="basket.png" alt=""></a>
+                <br />
+                <a class="link text-basket color-blue" href="basket.html">Корзина</a>
+            </div>
+        </div>
+    </div>
+    <!--Шапка2-->
+    <div class="container back-color-light-blue">
+        <div class="row">
+            <div class="col-sm-4">
+                <a class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true"
+                    aria-expanded="false"> Каталог товаров </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="catalog_kits.html">Наборы для вышивания</a>
+                    <a class="dropdown-item" href="catalog_mouline.html">Мулине</a>
+                    <a class="dropdown-item" href="catalog_frame.html">Пяльца и станки</a>
+                    <a class="dropdown-item" href="catalog_canvas.html">Основы для вышивания</a>
+                </div>
+            </div>
+            <div class="col-sm">
+                <nav class="navbar navbar-expand-lg navbar-light back-color-light-blue">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link color-blue" href="help_buy.html">Как купить</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-blue" href="help_delivery_and_payment.html">Доставка и оплата</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link color-blue" href="help_contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--Надпись-->
+    <div class="container bg-white">
+        <h4 class="title">Оформление заказа</h4>
+    </div>
+    <!--Блок с формами-->
+    <div class="container bg-white">
+        <div class="row">
+            <div class="col-sm-5">
+                <div class="form-group">
+                    <label for="examplefio">Введите ФИО</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Иванов Иван Иваныч">
+                </div>
+                <div class="form-group">
+                    <label for="examplefio">Введите регион</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Московская область">
+                </div>
+                <div class="form-group">
+                    <label for="examplefio">Введите город/населенный пункт</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Москва">
+                </div>
+                <div class="form-group">
+                    <label for="examplefio">Введите индекс</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="000000">
+                </div>
+                <div class="form-group">
+                    <label for="examplefio">Введите улицу, номер корпуса, дома, квартиры</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput"
+                        placeholder="ул. Ленина, 99, кв. 10">
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+            <div class="col-sm">
+                <p>Способ доставки</p>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked"
+                        required>
+                    <label class="custom-control-label" for="customControlValidation2">Посылка 1 класса 290 руб. (1-3
+                        дня)</label>
+                    <p>{Здесь будет описание}</p>
+                </div>
+                <div class="custom-control custom-radio">
+                    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked"
+                        required>
+                    <label class="custom-control-label" for="customControlValidation3">Посылка обычная 230 руб. (2-5
+                        дней)</label>
+                    <p>{Здесь будет описание}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Итоговый блок-->
+    <div class="container bg-white">
+        <div class="row">
+            <div class="col-sm-8"></div>
+            <p class="paragraph-result">Итого с доставкой:</p>
+            <p class="paragraph-result">1373₽</p>
+        </div>
+    </div>
+    <!--Кнопка оплатить-->
+    <div class="container bg-white">
+        <div class="row">
+            <div class="col-sm-8"></div>
+            <button type="button" class="btn btn-primary button-color-blue pay-button">Оплатить</button>
+        </div>
+    </div>
+
+    <!--Подвал-->
+    <div class="container back-color-light-blue footer">
+        <div class="row">
+            <div class="col-sm color-blue">
+                <strong>© 2020 — 2020 </strong>Магазин вышивки "Рай"
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

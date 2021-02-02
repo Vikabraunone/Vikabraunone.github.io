@@ -1,0 +1,39 @@
+.card-product{
+    width: 16em;
+    height:28em;
+    margin-bottom:2em;
+}
+
+/*Карточка: текст*/
+.card-product .card-text{
+    padding: 0em 0em;
+    margin: 0em 0em;
+}
+
+/*Карточка: изображение*/
+.card-product .card-img-top{
+    display:block;
+    height: 12em;
+}
+
+/*Карточка: футер*/
+.card-product .card-footer{
+    background-color: white;
+    border-top-color: white;
+}
+
+/*Карточка: цена*/
+.card-product .card-footer.cost strong{
+    font-size: 1.2em;
+    display:inline-block;
+    width:5em;
+    margin-right:0.5em;
+    margin-left:-1.2em;
+}
+
+/*Карточка: кнопка*/
+.card-product .card-footer .btn{
+    display:inline-block;
+    width:5em;
+    margin-left:0.5em;
+}

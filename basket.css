@@ -1,0 +1,43 @@
+.container.bg-white.container-border{
+    border-bottom:0.1em solid;
+    padding-bottom:1.5em;
+    border-color:#4682B4;
+}
+
+.card-img-top{
+    width:10em;
+}
+
+.btn-plus-minus{
+    width: 2.5em;
+    height:2.5em;
+    border-radius: 50%;
+    color:black;
+    border-color:black;
+}
+
+/*Наведение на кнопку +-*/
+.btn-plus-minus:hover {
+    background-color: SlateGray;
+    border-color:SlateGray;
+    color: white;
+}
+
+/*Название товара*/
+.link.name-product{
+    color:black;
+    font-size:1.1em;
+    font-weight: bold;
+}
+
+/*Отобразить абзац как строчный элемент*/
+p{
+    display:inline-block;
+}
+
+/*Абзац с ценой*/
+.p-cost{
+    font-weight:bold;
+    font-size:1.1em;
+    color:black;
+}

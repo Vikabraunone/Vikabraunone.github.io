@@ -1,0 +1,11 @@
+.paragraph-result{
+    color:black;
+    font-size:1.1em;
+    font-weight: bold;
+    padding-right:1em;
+    margin-bottom:0;
+}
+
+.pay-button{
+    width:15em;
+}

@@ -1,0 +1,21 @@
+/*Название товара*/
+.p-name-product{
+    color:black;
+    font-size:1.1em;
+    font-weight: bold;
+}
+
+
+/*Абзац с ценой*/
+.p-cost{
+    margin-top:2em;
+    font-weight:bold;
+    font-size:1.3em;
+    color:black;
+}
+
+/*Кнопка "В корзину"*/
+.btn-basket{
+    width:12em;
+    margin-bottom:2em;
+}

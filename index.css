@@ -1,0 +1,18 @@
+/*Название блока*/
+.block-name{
+    font-weight:bold;
+    padding-left:0em;
+    margin-left:0em;
+    font-size:1.1em;
+    margin-left:2em;    
+    display:inline-block;
+}
+
+/*Название блока: смотреть всё*/
+.block-name-all{
+    padding-left:0em;
+    margin-left:0em;
+    font-size:1.1em;
+    margin-left:2em;    
+    display:inline-block;
+}

@@ -1,0 +1,105 @@
+body{
+   font-family: "Helvetica"; 
+}
+
+.container.bg-white{
+   margin-top:1.5em;
+}
+
+/*Заголовки страниц*/
+h4{
+   font-weight: bolder;
+}
+
+h5{
+   font-weight: 600;
+}
+
+/*Поиск*/
+.btn-search, .form-search{
+   margin-top:1.5em;
+   margin-bottom:1.5em;
+}
+
+.logo{
+   margin-top:0.6em;
+   margin-bottom:0.6em;
+}
+
+.dropdown-toggle{
+   padding-top: 1em;
+   margin-top: 0em;
+}
+
+.nav-item{
+   margin-left:3em;
+}
+
+.navbar-nav{
+   margin-left:6em;
+}
+
+/*Шапка*/
+.container.back-color-light-blue{
+   border-bottom:0.2em solid;
+   border-color:white;
+}
+
+/*Цвет меню*/
+.nav-link.dropdown-toggle{
+   color: #4682B4;
+}
+
+/*Цвет меню при наведении*/
+.dropdown-toggle:hover{
+   color: #4682B4 !important;
+}
+
+.back-color-light-blue{
+   background-color: #F0F8FF;
+}
+
+.color-blue{
+   color: #4682B4 !important;
+}
+
+.color-black{
+   color:black !important;
+}
+
+/*кнопка поиск*/
+.button-color-blue{
+   background-color: white;
+   border-color:#4682B4;
+   color: #4682B4;
+}
+
+/*нажатие на кнопку поиск*/
+.button-color-blue:hover{
+   background-color: #4682B4;
+   border-color:#4682B4;
+   color: white;
+}
+
+/*Изображение корзины*/
+.basket img{
+   margin: 0 10% 0 3%;
+}
+
+/*Корзина*/
+.basket{
+   padding-top:1.2em;
+   padding-left:3em;
+}
+
+/*Надпись "Корзина"*/
+.text-basket{
+   font-size:0.9em;
+}
+ 
+ /*Подвал*/
+.container.footer{
+   margin-top:2.5em;
+   padding-top:1.5em;
+   padding-bottom:1.5em;
+}

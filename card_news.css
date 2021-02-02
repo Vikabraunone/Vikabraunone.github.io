@@ -1,0 +1,14 @@
+/*Карточка новостей*/
+.card.card-news{
+    height: 12em;
+    width:auto;
+}
+
+/*Карточка новостей: изображение*/
+.card.card-news .card-img{
+    max-height: 12em;
+    max-width: 12em;
+    width:auto;
+    height:auto;
+    padding: 10% 0 10% 0;
+}
