@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="order.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link rel="stylesheet" href="sweetalert2.css">
-    
+
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function (m, e, t, r, i, k, a) {
@@ -102,6 +102,10 @@
                     <label for="fio">Введите ФИО</label>
                     <input type="text" class="form-control" id="fio" name="fio" placeholder="Иванов Иван Иваныч"
                         required>
+                        
+                    <label for="telephone">Введите телефон</label>
+                    <input type="text" class="form-control" id="telephone" name="telephone" placeholder="7999881122"
+                        required>
 
                     <label for="region">Введите регион</label>
                     <input type="text" class="form-control" id="region" name="region" placeholder="Московская область"
@@ -113,7 +117,7 @@
                     <label for="postcode">Введите индекс</label>
                     <input type="text" class="form-control" id="postcode" name="postcode" placeholder="000000" required>
 
-                    <label for="address">Введите индекс</label>
+                    <label for="address">Введите адрес</label>
                     <input type="text" class="form-control" id="address" name="address"
                         placeholder="ул. Ленина, 99, кв. 10" required>
                 </div>
@@ -143,7 +147,8 @@
                     <p class="paragraph-result">Итого с доставкой:</p>
                     <p class="paragraph-result" name="sumOrder">1373₽</p>
                     <!--Кнопка оплатить-->
-                    <button type="submit" id="btnPay" class="btn btn-primary button-color-blue pay-button">Оплатить</button>
+                    <button type="submit" id="btnPay"
+                        class="btn btn-primary button-color-blue pay-button">Оплатить</button>
                 </div>
             </div>
         </form>

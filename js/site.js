@@ -25,7 +25,27 @@ form.addEventListener("formdata", event => {
   const values = [...data.values()];
   console.log(values);
 
-  let index = values[3];
+  let telephone = values[1];
+  if (isNaN(telephone))
+  {
+    Swal.fire({
+      icon: 'error',
+      title:'Неверный телефон!'
+    });
+    return;
+  }
+
+  if (String(telephone).length != 11)
+  {
+    Swal.fire({
+      icon: 'error',
+      title:'Неверный телефон!'
+    });
+    return;
+  }
+
+
+  let index = values[4];
   if (isNaN(index))
   {
     Swal.fire({
