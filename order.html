@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="all.css" />
     <link rel="stylesheet" href="order.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="sweetalert2.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
                 <a href="index.html"><img src="logo.png" alt=""></a>
             </div>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-search" placeholder="Поиск...">
+                <input type="text" class="form-control form-search" name="search-query" placeholder="Поиск...">
             </div>
             <div class="col-sm-2">
                 <a class="btn button-color-blue btn-search" href="search_result.html" role="button">Поиск</a>
@@ -73,68 +74,60 @@
     <div class="container bg-white">
         <h4 class="title">Оформление заказа</h4>
     </div>
-    <!--Блок с формами-->
     <div class="container bg-white">
-        <div class="row">
-            <div class="col-sm-5">
-                <div class="form-group">
-                    <label for="examplefio">Введите ФИО</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Иванов Иван Иваныч">
-                </div>
-                <div class="form-group">
-                    <label for="examplefio">Введите регион</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Московская область">
-                </div>
-                <div class="form-group">
-                    <label for="examplefio">Введите город/населенный пункт</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Москва">
-                </div>
-                <div class="form-group">
-                    <label for="examplefio">Введите индекс</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="000000">
-                </div>
-                <div class="form-group">
-                    <label for="examplefio">Введите улицу, номер корпуса, дома, квартиры</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput"
-                        placeholder="ул. Ленина, 99, кв. 10">
-                </div>
-            </div>
-            <div class="col-sm-1"></div>
-            <div class="col-sm">
-                <p>Способ доставки</p>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="customControlValidation2" name="radio-stacked"
+        <!--Блок с формами-->
+        <form>
+            <div class="row">
+                <div class="col-sm-5">
+                    <label for="fio">Введите ФИО</label>
+                    <input type="text" class="form-control" id="fio" name="fio" placeholder="Иванов Иван Иваныч"
                         required>
-                    <label class="custom-control-label" for="customControlValidation2">Посылка 1 класса 290 руб. (1-3
-                        дня)</label>
-                    <p>{Здесь будет описание}</p>
-                </div>
-                <div class="custom-control custom-radio">
-                    <input type="radio" class="custom-control-input" id="customControlValidation3" name="radio-stacked"
-                        required>
-                    <label class="custom-control-label" for="customControlValidation3">Посылка обычная 230 руб. (2-5
-                        дней)</label>
-                    <p>{Здесь будет описание}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--Итоговый блок-->
-    <div class="container bg-white">
-        <div class="row">
-            <div class="col-sm-8"></div>
-            <p class="paragraph-result">Итого с доставкой:</p>
-            <p class="paragraph-result">1373₽</p>
-        </div>
-    </div>
-    <!--Кнопка оплатить-->
-    <div class="container bg-white">
-        <div class="row">
-            <div class="col-sm-8"></div>
-            <button type="button" class="btn btn-primary button-color-blue pay-button">Оплатить</button>
-        </div>
-    </div>
 
+                    <label for="region">Введите регион</label>
+                    <input type="text" class="form-control" id="region" name="region" placeholder="Московская область"
+                        required>
+
+                    <label for="city">Введите город/населенный пункт</label>
+                    <input type="text" class="form-control" id="city" name="city" placeholder="Москва" required>
+
+                    <label for="postcode">Введите индекс</label>
+                    <input type="text" class="form-control" id="postcode" name="postcode" placeholder="000000" required>
+
+                    <label for="address">Введите индекс</label>
+                    <input type="text" class="form-control" id="address" name="address"
+                        placeholder="ул. Ленина, 99, кв. 10" required>
+                </div>
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                    <p>Способ доставки</p>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="delivery1" value="1 класс"
+                            checked>
+                        <label class="form-check-label" for="delivery1">
+                            Посылка 1 класса 290 руб. (1-3 дня)
+                        </label>
+                        <p>{Здесь будет описание}</p>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="delivery2"
+                            value="обычная">
+                        <label class="form-check-label" for="delivery2">
+                            Посылка обычная 230 руб. (2-5 дней)
+                        </label>
+                        <p>{Здесь будет описание}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="left">
+                    <p class="paragraph-result">Итого с доставкой:</p>
+                    <p class="paragraph-result" name="sumOrder">1373₽</p>
+                    <!--Кнопка оплатить-->
+                    <button type="submit" id="btnPay" class="btn btn-primary button-color-blue pay-button">Оплатить</button>
+                </div>
+            </div>
+        </form>
+    </div>
     <!--Подвал-->
     <div class="container back-color-light-blue footer">
         <div class="row">
@@ -143,6 +136,9 @@
             </div>
         </div>
     </div>
+    <script src="js/site.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 </body>
 
 </html>

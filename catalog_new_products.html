@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="card_product.css" />
       <link rel="stylesheet" href="filter_page_navigation.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="sweetalert2.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
                 <a href="index.html"><img src="logo.png" alt=""></a>
             </div>
             <div class="col-sm-4">
-                <input type="text" class="form-control form-search" placeholder="Поиск...">
+                <input type="text" class="form-control form-search" name="search-query" placeholder="Поиск...">
             </div>
             <div class="col-sm-2">
                 <a class="btn button-color-blue btn-search" href="search_result.html" role="button">Поиск</a>
@@ -89,7 +90,7 @@
                     </div>
                     <div class="card-footer cost">
                         <strong>542₽</strong>
-                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                        <button type="button" name="addBasketButton" class="btn btn-primary button-color-blue">Купить</button>
                     </div>
                 </div>
             </div>
@@ -105,7 +106,7 @@
                     </div>
                     <div class="card-footer cost">
                         <strong>559₽</strong>
-                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                        <button type="button" name="addBasketButton" class="btn btn-primary button-color-blue">Купить</button>
                     </div>
                 </div>
             </div>
@@ -121,7 +122,7 @@
                     </div>
                     <div class="card-footer cost">
                         <strong>559₽</strong>
-                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                        <button type="button" name="addBasketButton" class="btn btn-primary button-color-blue">Купить</button>
                     </div>
                 </div>
             </div>
@@ -137,7 +138,7 @@
                     </div>
                     <div class="card-footer cost">
                         <strong>1005₽</strong>
-                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                        <button type="button" name="addBasketButton" class="btn btn-primary button-color-blue">Купить</button>
                     </div>
                 </div>
             </div>
@@ -156,7 +157,7 @@
                     </div>
                     <div class="card-footer cost">
                         <strong>463₽</strong>
-                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                        <button type="button" name="addBasketButton" class="btn btn-primary button-color-blue">Купить</button>
                     </div>
                 </div>
             </div>
@@ -171,7 +172,7 @@
                     </div>
                     <div class="card-footer cost">
                         <strong>380₽</strong>
-                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                        <button type="button" name="addBasketButton" class="btn btn-primary button-color-blue">Купить</button>
                     </div>
                 </div>
             </div>
@@ -186,7 +187,7 @@
                     </div>
                     <div class="card-footer cost">
                         <strong>340₽</strong>
-                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                        <button type="button" name="addBasketButton" class="btn btn-primary button-color-blue">Купить</button>
                     </div>
                 </div>
             </div>
@@ -200,7 +201,7 @@
                     </div>
                     <div class="card-footer cost">
                         <strong>17₽</strong>
-                        <button type="button" class="btn btn-primary button-color-blue">Купить</button>
+                        <button type="button" name="addBasketButton" class="btn btn-primary button-color-blue">Купить</button>
                     </div>
                 </div>
             </div>
@@ -231,6 +232,9 @@
             </div>
         </div>
     </div>
+    <script src="js/site.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 </body>
 
 </html>
